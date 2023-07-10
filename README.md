@@ -11,6 +11,10 @@ Pascal's triangle as demonstrated in Python
 
 - Description: This project focuses on implementing a function `canUnlockAll(boxes)` that determines if all the boxes in a list of lists can be opened. Each box is numbered sequentially from 0 to `n - 1` and each box may contain keys to the other boxes. The function returns `True` if all boxes can be opened, else it returns `False`.
 
+### 0x02-minimum_operations
+
+- Description: This project focuses on solving the minimum operations problem using text editing operations. The goal is to calculate the fewest number of operations needed to result in exactly n occurrences of the character 'H' in a text file.
+
 ## Usage
 
 To use any project in this repository, follow the instructions provided in each respective directory.
