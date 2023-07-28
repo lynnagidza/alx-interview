@@ -12,7 +12,7 @@ def validUTF8(data):
     data_iter = iter(data)
     for number in data_iter:
         # get the binary representation of the number with 8 bits
-        bin_rep = format(number, '08b')
+        bin_rep = format(number, '#010b')[-8:]
 
         if bin_rep[0] == '0':
             continue
@@ -25,7 +25,8 @@ def validUTF8(data):
         # check if the next n_bytes - 1 numbers are valid
         for _ in range(n_bytes - 1):
             number = next(data_iter, None)
-            if number is None or not is_multi_byte(format(number, '08b')):
+            if number is None or not is_multi_byte(format(number, '#010b')\
+                                                   [-8:]):
                 return False
     return True
 
@@ -38,4 +39,22 @@ def validUTF8(data):
 # print(validUTF8(data))
 
 # data = [229, 65, 127, 256]
+# print(validUTF8(data))
+
+# data = [467, 133, 108]  # true
+# print(validUTF8(data))
+
+# data = [240, 188, 128, 167]  # true
+# print(validUTF8(data))
+
+# data = [235, 140]  # false
+# print(validUTF8(data))
+
+# data = [250, 145, 145, 145, 145]  # false
+# print(validUTF8(data))
+
+# data = [0, 0, 0, 0, 0, 0]  # true
+# print(validUTF8(data))
+
+# data = []  # true
 # print(validUTF8(data))
