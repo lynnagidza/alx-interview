@@ -25,7 +25,7 @@ def validUTF8(data):
         # check if the next n_bytes - 1 numbers are valid
         for _ in range(n_bytes - 1):
             number = next(data_iter, None)
-            if number is None or not is_multi_byte(format(number, '#010b')[-8:]):
+            if not number or not is_multi_byte(format(number, '#010b')[-8:]):
                 return False
     return True
 
