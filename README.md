@@ -30,6 +30,10 @@ This project focuses on implementing a function `validUTF8(data)` that determine
 
 This project focuses on solving the N queens problem. The N queens problem is the challenge of placing N non-attacking queens on an N×N chessboard. The function `nqueens(n)` returns a list of lists containing all the possible solutions to the problem.
 
+### 0x06-starwars_api
+
+This project focuses on making HTTP requests to the [Star Wars API](https://swapi-api.hbtn.io/).
+
 ## Usage
 
 To use any project in this repository, follow the instructions provided in each respective directory.
