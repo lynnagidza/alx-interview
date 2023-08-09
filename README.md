@@ -32,7 +32,7 @@ This project focuses on solving the N queens problem. The N queens problem is th
 
 ### 0x06-starwars_api
 
-This project focuses on making HTTP requests to the [Star Wars API](https://swapi-api.hbtn.io/).
+This project focuses on making HTTP requests to the [Star Wars API](https://swapi-api.alx-tools.com/).
 
 ## Usage
 
