@@ -7,15 +7,22 @@ request(url + movieId, function (error, response, body) {
     console.log(error);
   } else {
     const characters = JSON.parse(body).characters;
-    for (const character of characters) {
-      request(character, function (error, response, body) {
-        if (error) {
-          console.log(error);
-        } else {
-          console.log(JSON.parse(body).name);
-        }
-      });
-    }
+    printInOrder(characters);
   }
 }
 );
+
+async function printInOrder (characters) {
+  for (const character of characters) {
+    await new Promise((resolve, reject) => {
+      request(character, function (error, response, body) {
+        if (error) {
+          reject(error);
+        } else {
+          console.log(JSON.parse(body).name);
+          resolve();
+        }
+      });
+    });
+  }
+}
