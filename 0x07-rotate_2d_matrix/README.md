@@ -22,7 +22,7 @@ Given an `n` x `n` 2D matrix, rotate the matrix by 90 degrees clockwise.
 ```
 
 ## Example Usage (with file)
-### 1. Create a file named 0-main.py with the following contents:
+### 1. Create a file named main_0.py with the following contents:
 ```bash
 $ cat main_0.py
 #!/usr/bin/env python3
