@@ -38,6 +38,10 @@ This project focuses on making HTTP requests to the [Star Wars API](https://swap
 
 This project focuses on implementing a function `rotate_2d_matrix(matrix)` that rotates a 2D matrix 90 degrees clockwise.
 
+### Island Perimeter
+
+This project focuses on implementing a function `island_perimeter(grid)` that returns the perimeter of the island described in `grid`.
+
 ## Usage
 
 To use any project in this repository, follow the instructions provided in each respective directory.
