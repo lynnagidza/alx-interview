@@ -42,6 +42,10 @@ This project focuses on implementing a function `rotate_2d_matrix(matrix)` that 
 
 This project focuses on implementing a function `island_perimeter(grid)` that returns the perimeter of the island described in `grid`.
 
+### Prime Game
+
+This project focuses on implementing a function `isWinner(x, nums)` that determines who the winner of each game is.
+
 ## Usage
 
 To use any project in this repository, follow the instructions provided in each respective directory.
